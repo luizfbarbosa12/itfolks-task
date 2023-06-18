@@ -1,0 +1,42 @@
+@import '../../styles/variables';
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header-wrapper {
+  width: 100vw;
+  min-height: 8.5rem;
+  background-color: $background-color;
+  border: 1px solid red;
+}
+
+.main-content {
+    display: flex;
+    gap: $standard-spacing;
+}
+
+.main-container {
+    height: 47.375rem;
+    width: 56.75rem;
+    border-radius: $standard-border;
+    padding: $standard-padding 0 $l-padding $l-padding;
+    box-shadow: 0px 5px 30px $box-shadow-color;
+    display: flex;
+    flex-direction: column;
+    gap: $l-spacing;
+}
+
+.aside-wrapper {
+    height: 630px;
+    width: 380px;
+    background-color: $background-color;
+    box-shadow: 0px 5px 30px $box-shadow-color;
+    border-radius: $standard-border;
+}
+.footer-wrapper {
+    min-height: 5.25rem;
+    width: 100vw;
+}
