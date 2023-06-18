@@ -6,6 +6,7 @@ import {
 import './MainPage.scss';
 
 import FormGroupComponent from '../../components/molecules/FormGroup';
+import InputComponent from '../../components/atoms/Input/InputComponent';
 
 const MainPage = () => {
     const [checked, setChecked] = useState(false)
@@ -23,7 +24,7 @@ const MainPage = () => {
               <ToggleButton value='hybrid'>Hybrid work</ToggleButton>
               <ToggleButton value='remote'>Remote work</ToggleButton>
             </div>
-            <TextField label='Town' className='input-styles' />
+           <InputComponent/>
           </div>
           <div className='section-2'>
             <h3>Estimated amount of work</h3>
