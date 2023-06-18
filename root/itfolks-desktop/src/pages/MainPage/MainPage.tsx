@@ -4,10 +4,14 @@ import {
   Checkbox,
   FormControlLabel,
   FormGroup,
+  ToggleButtonGroup,
 } from '@mui/material';
 import './MainPage.scss';
+import checkboxValues from '../../data/checkboxValues.json';
+import { useState } from 'react';
 
 const MainPage = () => {
+    const [checked, setChecked] = useState(false)
   return (
     <div className='container'>
       <header className='header-wrapper' />
@@ -15,16 +19,16 @@ const MainPage = () => {
         <main className='main-container'>
           <h1>Workplace details</h1>
           <p>Provide the details of the job</p>
-          <div>
+          <div className='operating-mode'>
             <h3>Operating mode</h3>
-            <div>
-              <ToggleButton>Stationary work</ToggleButton>
-              <ToggleButton>Hybrid work</ToggleButton>
-              <ToggleButton>Remote work</ToggleButton>
+            <div className='operating-options'>
+              <ToggleButton value='stationary'>Stationary work</ToggleButton>
+              <ToggleButton value='hybrid'>Hybrid work</ToggleButton>
+              <ToggleButton value='remote'>Remote work</ToggleButton>
             </div>
-            <TextField label='Town' />
+            <TextField label='Town' className='input-styles' />
           </div>
-          <div>
+          <div className='section-2'>
             <h3>Estimated amount of work</h3>
             <div>
               <ToggleButton>Full-time</ToggleButton>
@@ -32,24 +36,18 @@ const MainPage = () => {
               <ToggleButton>Additional job</ToggleButton>
             </div>
           </div>
-          <div>
+          <div className='section-3'>
             <h3>Benefits (Optional)</h3>
             <div>
-              <FormGroup>
-                <FormControlLabel
-                  control={<Checkbox defaultChecked />}
-                  label='Label'
-                />
-                <FormControlLabel
-                  required
-                  control={<Checkbox />}
-                  label='Required'
-                />
-                <FormControlLabel
-                  disabled
-                  control={<Checkbox />}
-                  label='Disabled'
-                />
+              <FormGroup className="form">
+                {checkboxValues.map((item) => {
+                  return (
+                    <FormControlLabel
+                      control={<Checkbox checked={checked} />}
+                      label={item}
+                    />
+                  );
+                })}
               </FormGroup>
             </div>
           </div>
