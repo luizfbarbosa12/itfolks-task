@@ -1,14 +1,11 @@
+import { useState } from 'react';
 import {
   ToggleButton,
-  TextField,
-  Checkbox,
-  FormControlLabel,
-  FormGroup,
-  ToggleButtonGroup,
+  TextField
 } from '@mui/material';
 import './MainPage.scss';
-import checkboxValues from '../../data/checkboxValues.json';
-import { useState } from 'react';
+
+import FormGroupComponent from '../../components/molecules/FormGroup';
 
 const MainPage = () => {
     const [checked, setChecked] = useState(false)
@@ -39,16 +36,7 @@ const MainPage = () => {
           <div className='section-3'>
             <h3>Benefits (Optional)</h3>
             <div>
-              <FormGroup className="form">
-                {checkboxValues.map((item) => {
-                  return (
-                    <FormControlLabel
-                      control={<Checkbox checked={checked} />}
-                      label={item}
-                    />
-                  );
-                })}
-              </FormGroup>
+              <FormGroupComponent/>
             </div>
           </div>
         </main>
