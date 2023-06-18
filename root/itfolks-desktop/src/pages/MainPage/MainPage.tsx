@@ -7,6 +7,7 @@ import './MainPage.scss';
 
 import FormGroupComponent from '../../components/molecules/FormGroup';
 import InputComponent from '../../components/atoms/Input/InputComponent';
+import OperatingOptions from '../../components/molecules/OperatingOptions/OperatingOptions';
 
 const MainPage = () => {
     const [checked, setChecked] = useState(false)
@@ -19,11 +20,7 @@ const MainPage = () => {
           <p>Provide the details of the job</p>
           <div className='operating-mode'>
             <h3>Operating mode</h3>
-            <div className='operating-options'>
-              <ToggleButton value='stationary'>Stationary work</ToggleButton>
-              <ToggleButton value='hybrid'>Hybrid work</ToggleButton>
-              <ToggleButton value='remote'>Remote work</ToggleButton>
-            </div>
+            <OperatingOptions/>
            <InputComponent/>
           </div>
           <div className='section-2'>
