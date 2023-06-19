@@ -1,4 +1,10 @@
+@import '../../../styles/variables';
+
 .input-styles {
     width: 204px;
     height: 44px;
+
+    @media screen and (max-width: $mobile-breakpoint) {
+        width: 100%;
+      }
 }
