@@ -8,15 +8,20 @@ $border-color: #F2F2F2;
 //spacing
 $standard-spacing: 1rem;
 $l-spacing: 1.5rem;
-//paddings
 
+//paddings
 $standard-padding: 1rem;
 $l-padding: 1.5rem;
-//border-radius
 
+//border-radius
 $standard-border: 0.5rem;
 
 
 //box-shadow-colors
-
 $box-shadow-color: rgba(0, 0, 0, 0.15);
+
+//breakpoints
+
+$large-breakpoint: 1350px;
+$medium-breakpoint: 950px;
+$mobile-breakpoint: 480px;

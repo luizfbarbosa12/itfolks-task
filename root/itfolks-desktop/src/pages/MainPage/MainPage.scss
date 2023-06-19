@@ -13,11 +13,15 @@
 .main-content {
   display: flex;
   gap: $standard-spacing;
+
+  @media screen and (max-width: $large-breakpoint) {
+    flex-direction: column;
+  }
 }
 .operating-mode {
-    display: flex;
-    flex-direction: column;
-    gap: $standard-spacing;
+  display: flex;
+  flex-direction: column;
+  gap: $standard-spacing;
 }
 
 .main-container {
@@ -29,19 +33,34 @@
   display: flex;
   flex-direction: column;
   gap: $l-spacing;
+
+  @media screen and (max-width: $medium-breakpoint) {
+    width: 30rem;
+  }
+
+  @media screen and (max-width: $mobile-breakpoint) {
+    width: 23.5rem;
+    padding: $standard-padding;
+  }
 }
 .section-2 {
-    display: flex;
-    flex-direction: column;
-    gap: $standard-spacing;
+  display: flex;
+  flex-direction: column;
+  gap: $standard-spacing;
 }
 .form {
-    max-height: 21.563rem;
+  max-height: 21.563rem;
+  @media screen and (max-width: $medium-breakpoint) {
+    max-height: 37rem;
+  }
+  @media screen and (max-width: $mobile-breakpoint) {
+    max-height: 39rem;
+  }
 }
 .section-3 {
-    display: flex;
-    flex-direction: column;
-    gap: $standard-spacing;
+  display: flex;
+  flex-direction: column;
+  gap: $standard-spacing;
 }
 
 .aside-wrapper {
