@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { SafeAreaView, View, Text, FlatList } from "react-native";
+import React from "react";
+import { SafeAreaView, View, Text } from "react-native";
 import { styles } from "./MainScreen.styles";
 import InputComponent from "../components/atoms/InputComponent";
 import CheckboxComponent from "../components/atoms/CheckboxComponent";
@@ -30,14 +30,7 @@ const MainPage = () => {
           </View>
           <View style={styles.section3}>
             <Text style={styles.h3Text}>Benefits (Optional)</Text>
-            <View>
-              {/* <FlatList
-                data={benefitsCheckboxes}
-                keyExtractor={item => item}
-                renderItem={({ item }) => (
-                  <CheckboxComponent key={item} label={item} />
-                )}
-              /> */}
+            <View style={{overflow: 'scroll'}}>
               {benefitsCheckboxes.map((item) => {
                 return <CheckboxComponent key={item} label={item} />
               })}

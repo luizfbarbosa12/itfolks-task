@@ -7,6 +7,9 @@ export const styles = StyleSheet.create({
     paddingVertical: 20,
     paddingHorizontal: 24
   },
+  mainContent: {
+    gap: 16
+  },
   pageTitle: {
     fontSize: 26,
     fontWeight: "700",
