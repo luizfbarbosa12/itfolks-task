@@ -22,6 +22,38 @@ Several smaller libraries were utilized in the React Native version of the proje
 
 - `react-native-safe-area-context`: A library that helps with managing safe area insets in React Native applications. It ensures that content is properly displayed on devices with notches or rounded corners. Documentation: [React Native Safe Area Context](link-to-react-native-safe-area-context-docs)
 
+# React Native Application Details
+
+## Expo for Development
+
+For the development of the React Native application, Expo was used as a development tool. Expo is a set of tools and services built around React Native that simplifies the development process by providing various features and benefits.
+
+Expo offers a range of advantages, including:
+
+- **Ease of Setup**: Expo allows for a quick and straightforward setup, enabling developers to start building React Native applications without the need for complex configurations.
+
+- **Development Workflow**: Expo provides a seamless development workflow with features like live reloading, which allows for real-time updates to the application as code changes are made.
+
+- **Cross-Platform Development**: With Expo, it is possible to develop and deploy applications for both iOS and Android platforms using a single codebase.
+
+- **Built-in Features**: Expo includes a set of built-in libraries and components that simplify common tasks, such as handling camera access, geolocation, push notifications, and more.
+
+To learn more about Expo and its capabilities, refer to the [Expo documentation](https://docs.expo.dev/).
+
+## Android Studio for Emulation
+
+Android Studio, a powerful integrated development environment (IDE), was used for emulating the React Native project during development. Android Studio provides a robust set of tools and features specifically tailored for Android application development.
+
+Android Studio offers the following benefits:
+
+- **Emulation and Testing**: Android Studio provides an Android Emulator that allows developers to simulate various Android devices and test their applications in different environments.
+
+- **Debugging and Profiling**: Android Studio offers advanced debugging and profiling tools, making it easier to identify and resolve issues within the application.
+
+- **Project Management**: Android Studio provides a comprehensive project management system, allowing developers to easily navigate and organize their codebase.
+
+For more information about Android Studio and its capabilities, please refer to the [Android Studio documentation](https://developer.android.com/studio).
+
 ## ESLint Configuration
 
 An ESLint configuration file was created to enforce coding standards based on the ReactJS and React Native communities. This configuration helps maintain consistency and improve code quality throughout the project.
