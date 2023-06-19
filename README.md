@@ -1,6 +1,6 @@
 # Project Description
 
-This project is a code representation of the design provided in the following Figma file: [Figma Design](link-to-figma-file).
+This project is a code representation of the design provided in the following Figma file: [Figma Design]([link-to-figma-file](https://www.figma.com/file/lLiQIC8pJOOICR5RWDktOz/ITFOLKS-Devlopment?type=design&node-id=0-1)).
 
 ## Code Details
 
