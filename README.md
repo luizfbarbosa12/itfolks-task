@@ -12,6 +12,27 @@ This project is a code representation of the design provided in the following Fi
 
 - Material UI, a popular React component library, was employed for the desktop version. Material UI offers a wide range of pre-designed components and styling options, enabling rapid development. For more information, refer to the [Material UI documentation](link-to-material-ui-docs).
 
+# Responsive Design in the Desktop Application
+
+The desktop application has been designed with a responsive approach to ensure optimal viewing and usability across different screen sizes. The following features contribute to its responsiveness:
+
+## Relative Units in CSS
+
+The desktop application utilizes relative units in CSS, such as percentages (`%`) and `em` units, for specifying dimensions and sizes. By using relative units, elements within the application can adapt to different screen sizes and maintain their proportions.
+
+## Flexible Containers
+
+Flexible containers, such as flexbox and grid, have been implemented in the desktop application's layout. These flexible containers automatically adjust their content's positioning and sizing based on available space, ensuring a responsive layout that accommodates varying screen sizes.
+
+## Media Queries and Breakpoints
+
+To cater to different screen sizes and provide an optimal user experience, the desktop application incorporates media queries with multiple breakpoints. These breakpoints define specific screen widths at which different CSS rules are applied, enabling the layout to adapt accordingly. By using media queries, the application can offer a seamless experience across various devices and screen sizes.
+
+The desktop application applies three different breakpoints within the media queries, allowing for adaptable designs across a range of screen sizes. The specific breakpoints and corresponding CSS rules ensure that the application's layout adjusts and reflows appropriately based on the available screen space.
+
+By combining relative units, flexible containers, and media queries with breakpoints, the desktop application achieves a responsive design that caters to a wide range of screen sizes and provides an optimal user experience.
+
+
 ## React Native Libraries
 
 Several smaller libraries were utilized in the React Native version of the project. These include:
