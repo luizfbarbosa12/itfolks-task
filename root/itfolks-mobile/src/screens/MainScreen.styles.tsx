@@ -1,7 +1,8 @@
-import { StyleSheet } from "react-native";
+import { StatusBar, StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
   container: {
+    marginTop: StatusBar.currentHeight || 0,
     flex: 1,
     flexDirection: "column",
     paddingVertical: 20,
@@ -13,30 +14,18 @@ export const styles = StyleSheet.create({
   pageTitle: {
     fontSize: 26,
     fontWeight: "700",
-    padding: 16
+    paddingLeft: 0,
+    paddingTop: 8
   },
   subTitle: {
     fontSize: 16,
-    gap: 16
   },
   mainContainer: {
     gap: 16,
     flexDirection: "column"
   },
-  operatingMode: {
-    flexDirection: "column",
-    gap: 16
-  },
   h3Text: {
     fontSize: 18,
     fontWeight: "500"
   },
-  section2: {
-    flexDirection: "column"
-  },
-  section3: {
-    flexDirection: "column",
-    gap: 16,
-    height: 100
-  }
 });

@@ -1,41 +1,19 @@
 import React from "react";
 import { SafeAreaView, View, Text } from "react-native";
 import { styles } from "./MainScreen.styles";
-import InputComponent from "../components/atoms/InputComponent";
-import CheckboxComponent from "../components/atoms/CheckboxComponent";
-import operatingModeCheckboxes from "../data/operatingModeCheckboxes.json";
-import AmountOfWork from "../data/AmountOfWork.json";
-import benefitsCheckboxes from "../data/benefitsCheckboxes.json";
+import OperatingMode from "../components/molecules/OperatingMode";
+import AmountOfWork from "../components/molecules/AmountOfWork/AmountOfWork";
+import BenefitsCheckboxes from "../components/molecules/BenefitsCheckboxes/BenefitsCheckboxes";
 const MainPage = () => {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.mainContent}>
         <View style={styles.mainContainer}>
           <Text style={styles.pageTitle}>Workplace details</Text>
-          <Text styles={styles.subTitle}>Provide the details of the job</Text>
-          <View style={styles.operatingMode}>
-            <Text style={styles.h3Text}>Operating mode</Text>
-            <View>
-              {operatingModeCheckboxes.map((item, index) => {
-                return <CheckboxComponent key={index} label={item} />;
-              })}
-            </View>
-            <InputComponent />
-          </View>
-          <View style={styles.section2}>
-            <Text style={styles.h3Text}>Estimated amount of work</Text>
-            {AmountOfWork.map((item, index) => {
-              return <CheckboxComponent key={index} label={item} />;
-            })}
-          </View>
-          <View style={styles.section3}>
-            <Text style={styles.h3Text}>Benefits (Optional)</Text>
-            <View style={{overflow: 'scroll'}}>
-              {benefitsCheckboxes.map((item) => {
-                return <CheckboxComponent key={item} label={item} />
-              })}
-            </View>
-          </View>
+          <Text style={styles.subTitle}>Provide the details of the job</Text>
+          <OperatingMode />
+          <AmountOfWork />
+          <BenefitsCheckboxes/>
         </View>
       </View>
     </SafeAreaView>

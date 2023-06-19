@@ -1,11 +1,14 @@
-import { SafeAreaView, ScrollView, StyleSheet } from "react-native";
+import { SafeAreaView, ScrollView, StatusBar, StyleSheet } from "react-native";
 import MainPage from "./src/screens/MainScreen";
+import { PaperProvider } from "react-native-paper";
 
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView contentContainerStyle={{ flexGrow: 1 }}>
+        <PaperProvider>
         <MainPage />
+        </PaperProvider>
       </ScrollView>
     </SafeAreaView>
   );
@@ -14,6 +17,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff"
+    backgroundColor: "#fff",
+    marginTop: StatusBar.currentHeight || 0
   }
 });
