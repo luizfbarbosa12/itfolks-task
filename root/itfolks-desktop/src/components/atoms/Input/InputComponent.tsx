@@ -1,16 +1,23 @@
 import { TextField } from '@mui/material';
 import './InputComponent.scss';
-import { useState } from 'react';
 
-const InputComponent = () => {
-  const [townInput, setTownInput] = useState<string | undefined>('Town');
-  
+interface InputComponentProps {
+  label?: string;
+  value?: string;
+  onChange?: React.Dispatch<React.SetStateAction<string>>;
+}
+
+const InputComponent = ({
+  label = 'Town',
+  value,
+  onChange,
+}: InputComponentProps) => {
   return (
     <TextField
-      label='Town'
+      label={label}
       className='input-styles'
-      value={townInput}
-      onChange={e => setTownInput(e.target.value)}
+      value={value}
+      onChange={onChange}
     />
   );
 };
